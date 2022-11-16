@@ -16,9 +16,9 @@ header {
 
 
 .bg-viola {
+    min-height: 400px;
     background-color: #9792e4;
     color: white;
-    min-height: 500px;
     padding: 15px;
     font-size: 20px;
     
@@ -26,6 +26,14 @@ header {
 
 .bg-text {
     min-height: 500px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.bg-benefits {
+    min-height: 400px;
+    background-color: #9792e4;
+    color: white;
     padding: 15px;
     font-size: 20px;
 }
@@ -38,7 +46,22 @@ header {
 #image {
     width: 50%;
     margin-top: 10%;
-    border-radius: 50px;
+}
+
+.circular-image {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular-image img {
+    width: auto;
+    height: 100%;
+    margin-left: -45px;
+   
 }
 
 
@@ -61,13 +84,11 @@ header {
 .row {
     display: flex;
     flex-wrap: wrap;
-    border: 2px dashed black;
     margin-top: 10%;
 }
 
 .col {
     flex-basis: calc(100% / 3);
-    border: 1px dashed black;
     padding: 20px;
 }
 
@@ -81,6 +102,7 @@ header {
     font-size: 20px;
 }
 
+
 .testimonial-card {
     min-height: 400px;
     background-color: #9792e4;
@@ -91,13 +113,23 @@ header {
     font-size: 20px;
 }
 
-.bg-card {
-    min-height: 800px;
+.card-app {
+    min-height: 400px;
     background-color: white;
     color: black;
     border-radius: 50px;
 
     padding: 24px;
+    font-size: 20px;
+}
+
+.card-content {
+    min-height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    
+    padding: 24px;
+    
     font-size: 20px;
 }
 
