@@ -78,6 +78,7 @@ header {
    
 }
 
+
 /*Navbar*/
 
 .navbar {
@@ -102,6 +103,11 @@ header {
     flex-basis: 15%;
 }
 
+button {
+    padding: 5px;
+    border-radius: 20px;
+}
+
 /* Utils */
 
 .row {
@@ -113,6 +119,7 @@ header {
 .col {
     flex-basis: calc(100% / 3);
     padding: 20px;
+    gap: 10px;
 }
 
 .card  {
@@ -209,11 +216,11 @@ footer {
     }
     
     .w-2 {
-        width: calc(100% / 3);
+        flex-basis: calc(100% / 3);
     }
 
     .w-1 {
-        width: calc(100% / 3 * 2);
+        flex-basis: calc(100% / 3 * 2);
     }
  }
 
@@ -225,6 +232,18 @@ footer {
     .col {
         flex-basis: calc(100% / 3);
         padding: 20px;
+    }
+
+    .row>.col {
+        padding: 1rem;
+    }
+    
+    .w-2 {
+        flex-basis: calc(100% / 3);
+    }
+    
+    .w-1 {
+         flex-basis: calc(100% / 3 * 2);
     }
 }
 
@@ -239,6 +258,6 @@ footer {
 
     .navbar .navbar-menu {
         display: flex;
-        justify-content: space-around;
+        gap: 30px;
     }
 }
