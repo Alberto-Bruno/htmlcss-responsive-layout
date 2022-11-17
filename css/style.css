@@ -48,6 +48,7 @@ header {
     min-height: 500px;
     padding: 15px;
     font-size: 20px;
+    text-align: center;
 }
 
 .container {
@@ -169,6 +170,7 @@ footer {
     min-height: 80px;
     color: white;
     background-color: rgb(73, 73, 73);
+    text-align: center;
 }
 
 /*@media screen and (max-width: 576px) {
@@ -228,12 +230,16 @@ footer {
         max-width: 970px;
     }
 
+    .row {
+        justify-content: space-between;
+    }
+
     .col {
         flex-basis: calc(100% / 3);
         padding: 20px;
     }
 
-    .row>.col {
+    .row >.col {
         padding: 1rem;
     }
     
