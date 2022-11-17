@@ -21,13 +21,14 @@ header {
     color: white;
     padding: 15px;
     font-size: 20px;
-    
+    text-align: center;
 }
 
-.bg-text {
+.bg-testimonial {
     min-height: 500px;
     padding: 15px;
     font-size: 20px;
+    text-align: center;
 }
 
 .bg-benefits {
@@ -36,12 +37,15 @@ header {
     color: white;
     padding: 15px;
     font-size: 20px;
+    text-align: center;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 600px;
     margin: 0 auto;
 }
+
+/* Image */
 
 #image {
     width: 50%;
@@ -64,8 +68,6 @@ header {
    
 }
 
-
-
 /*Navbar*/
 
 .navbar {
@@ -74,7 +76,18 @@ header {
     justify-content: space-between;
 }
 
-.navbar>* {
+.navbar .navbar-menu {
+    list-style-type: none;
+
+    display: none;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar > * {
     padding: 20px;
     flex-basis: 15%;
 }
@@ -82,9 +95,9 @@ header {
 /* Utils */
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
     margin-top: 10%;
+    flex-wrap: wrap;*/
 }
 
 .col {
@@ -92,7 +105,7 @@ header {
     padding: 20px;
 }
 
-.card {
+.card  {
     min-height: 400px;
     background-color: #b5ddff;
     border-radius: 20px;
@@ -133,8 +146,16 @@ header {
     font-size: 20px;
 }
 
+/* Footer */
 
-@media screen and (max-width: 576px) {
+footer {
+    min-height: 80px;
+    color: white;
+    background-color: rgb(73, 73, 73);
+
+}
+
+/*@media screen and (max-width: 576px) {
 
     .bg-viola {
         text-align: center;
@@ -154,12 +175,60 @@ header {
     #image {
         width: 70%;
     }
-}
+}*/
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 10%;
+    }
+    
     .col {
         width: 100%;
         flex-basis: 50%;
     }
 
+    .row > .col {
+        padding: 1rem;
+    }
+    
+    .w-2 {
+        width: calc(100% / 3);
+    }
+
+    .w-1 {
+        width: calc(100% / 3 * 2);
+    }
+ }
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+
+    .col {
+        flex-basis: calc(100% / 3);
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1040px;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+
+    .navbar .navbar-menu {
+        display: flex;
+        justify-content: space-around;
+    }
 }
